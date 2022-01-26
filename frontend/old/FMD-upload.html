@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Upload Image</title>
+        <link rel="stylesheet" href="FMD-upload.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+    <body>
+        <h1 class="header1">Face Mask Detection Upload</h1>
+
+        <div class="btn-group dropdownbtn" role="group" aria-label="Button group with   nested dropdown" >
+            <button type="button" class="btn btn-secondary btn-danger" onclick = "logout()" >Logout</button>
+          
+            <div class="btn-group" role="group">
+                <button class="btn btn-info but-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                Result<span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                <li><a href="FMD-Table.html">Table</a></li>
+                <li><a href="FMD-Video.html">Video</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="divupload"> 
+        <form action="" id="uploadfile">
+            <div class = "divupload" >
+                <input type="file" accept="image/*" multiple ="multiple" style="display: none;" id = "realphotoupload"/>
+            </div>
+
+            <div class = "divupload" >
+                <input type="file" accept="video/*" multiple ="multiple" style="display: none;" id = "realvideoupload"/>
+            </div>
+
+            <div class="btn btn-primary divupload divupload1" id="fakeupload" onclick="realclickphoto()">
+                <label for="name" >
+                 Choose Your Images    
+                </label>
+                
+            </div>
+
+           <div class="btn btn-primary divupload divupload1" id="fakeupload" onclick="realclickvideo()">
+            <label for="name" >
+                Choose Your videos   
+            </label>
+            </div>
+
+            <div class="btn btn-primary btn-success divupload divupload1" id="uploadfile" onclick="">
+                <label for="name" >
+                Upload file(s)   
+                </label>
+            </div>
+
+            <div class="preview1" id="previewbox1">
+            </div>
+
+            <div class="preview2 previewv" id="previewbox2">
+                
+            </div>
+        </div>
+        
+        </form>
+
+    </body>
+
+    <script>
+        function realclickphoto(){
+            $("#realphotoupload").trigger("click");
+        }
+
+        function realclickvideo(){
+            $("#realvideoupload").trigger("click");
+        }
+
+        var i = 0, j= 1;
+        document.getElementById("realphotoupload").addEventListener("change", function(){	
+			for(i;i <this.files.length;i++){
+				document.getElementById("previewbox1").innerHTML += '<div><img id="img'+i+'" class = "previewimg"/> <p><b>image '+j+'</b></p> </div>';
+				document.getElementById("img"+i).src = window.URL.createObjectURL(this.files[i]);
+                j++;
+			}
+		});
+        
+        document.getElementById("realvideoupload").addEventListener("change",
+        function(){
+                var leng = this.files.length;
+				url = URL.createObjectURL(new Blob([this.files[0]]));
+                //To handle video preview
+                $('.previewv').html('').append($('<video controls src="' + url + '">'));
+                document.getElementById("previewbox2").innerHTML += '<p>Totally <b> '+leng+' videos </b></p></div>';
+        });
+        
+        function logout(){
+            window.location.href = 'FMD-main.html';// = index.html in github
+        }
+
+    </script>
+        
+</html>

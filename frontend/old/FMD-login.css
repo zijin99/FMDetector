@@ -1,0 +1,38 @@
+
+		body{
+			background:url('https://github.com/zijin99/zijin99.github.io/blob/main/BGI-2.jpg?raw=true');
+			font-family: 'Times New Roman', Times, serif;
+			/*background-image: linear-gradient(45DEG,#93278F,#00a99d);*/
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover; 
+			-webkit-background-size: cover;
+			-o-background-size: cover;
+			-moz-background-size: cover;
+			-ms-background-size: cover;
+			
+		}
+		
+		.emphasis{
+			font-size: 30px;
+		}
+		
+		.login-form {
+			width: 20%;
+			margin: auto;
+			margin-top: 15%;
+			position: relative;
+			left: 30px;
+		}
+
+		.header1 {
+			background-image: linear-gradient(#93278F,#00a99d);
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+			position: relative;
+		}
+		.divbackground{
+			background-color: #C8C6C7;
+		}

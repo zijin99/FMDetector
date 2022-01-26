@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title> FMD-Main Page</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+
+    body
+    {
+        background-image:url('https://github.com/zijin99/zijin99.github.io/blob/main/BGI-2.jpg?raw=true');
+        /*background-image: linear-gradient(45DEG,#93278F,#00a99d);*/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    .header1 {
+        background-image: linear-gradient(#93278F,#00a99d);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        position: relative;
+        left: 30px;
+    }
+
+    p1{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    .input1{
+        background:#8b8a8b;
+        color:#f2f2f2;
+        padding: 10px 30px 10px 30px;
+        font-size:16px;
+        border: transparent;
+        position: relative;
+        left: 30px;
+    }
+
+</style>
+
+<body>
+
+<table class="table table-hover" style="text-align: center">
+    <tr>
+        <td><h1 class="header1">Face Mask Detection</h1></td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://htmlpreview.github.io/?https://github.com/zijin99/zijin99.github.io/blob/734cdde83bda5ea3534a9b503d9a81540379deda/FMD-login.html">
+                <input class="input1" type="submit" name = "submit" value ="Login"/>
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a data-toggle="modal" data-target="#signup-windows">
+                <input class="input1" type="submit" name ="register" value ="Sign Up"/>
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="mailto:zijinj@andrew.cmu.edu?
+		subject=Test Contact & body=TEST">
+                <input class="input1"  type="submit" name = "Contact" value ="Contact Us"/>
+            </a>
+        </td>
+    </tr>
+</table>
+
+<!-- Sign Up Window -->
+
+<div class="modal fade" id="signup-windows" tabindex="-1" role="dialog" aria-labelledby="LabelRg">
+    <center>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <b><h3 class="modal-title" id="LabelRg">Sign Up</h3></b>
+                </div>
+                <div class="modal-body">
+                    <form class="signupform" role="form" action = "" method="POST">
+                        <label>User Name:</label>
+                        <input class="form-control" placeholder="Email Address" />
+                        <br />
+                        <br />
+                        <label>Password:</label><input class="form-control" placeholder="Password" />
+                        <br />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                        <input type="submit" class="btn btn-primary mr-auto" value="Sign Up"/>
+                        </form>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancal </button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </center>
+</div>
+
+<script>
+    history.pushState(null, null, document.URL);
+    window.addEventListener("popstate", function() {
+        history.pushState(null, null, document.URL);
+    });
+</script>
+
+
+
+<p1><cite>Photo by Anna Shvets in 2020</cite>.</p1>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> FMD-Main Page</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="FMD-main.css">
+    <script src="FMD-main.js"></script>
+</head>
+
+
+<body>
+
+<table class="table table-hover" style="text-align: center">
+<tr>
+<td><h1 class="header1">Face Mask Detection</h1></td>
+</tr>
+<tr>
+    <td>
+        <a href="FMD-login.html">
+        <input class="input1", type="submit", name =submit, value ="Login"/>
+        </a>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <a data-toggle="modal" data-target="#signup-windows">
+        <input class="input1", type="submit", name =register, value ="Sign Up"/>
+        </a>
+    </td>   
+</tr>
+
+<tr>
+    <td>
+        <a href="mailto:zijinj@andrew.cmu.edu?
+		subject=Test Contact & body=TEST">
+            <input class="input1", type="submit",type="submit", name =Contact, value ="Contact Us"/>
+            </a>
+    </td>   
+</tr>
+</table>
+
+<!-- Sign Up Window -->
+
+<div class="modal fade" id="signup-windows" tabindex="-1" role="dialog" aria-labelledby="LabelRg">
+    <center>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <b><h3 class="modal-title" id="LabelRg">Sign Up</h3></b>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" action="FMD-login.html">
+                    <div class="form-group">
+                      <label for="Email" class="col-sm-2 control-label">User ID:</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="unsignup" placeholder="Email Address" required pattern="^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="col-sm-2 control-label">Password:</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="pwdsignup" placeholder="Enter Your Password">
+                      </div>
+                    </div>
+                
+            </div>
+            <div class="modal-footer">
+                <center>
+                 <input type="submit" class="btn btn-primary mr-auto" value="Sign Up" />
+                </form>
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancal </button>
+                </center>
+            </div>
+        </div>
+    </div>
+    </center>
+    
+</div>
+
+<p1><cite>Photo by Anna Shvets in 2020</cite>.</p1>
+
+</body>
+
+</html>

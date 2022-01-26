@@ -1,0 +1,71 @@
+body{
+    background-image:url('https://github.com/zijin99/zijin99.github.io/blob/main/BGI-2.jpg?raw=true');
+    font-family: 'Times New Roman', Times, serif;
+    /*background-image: linear-gradient(45DEG,#93278F,#00a99d);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+
+.divupload {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.divupload1:hover {
+    text-align: center;
+    margin-top: 4%;
+
+}
+
+
+.preview1{
+    float: left;
+    background-color: #C8C6C7;
+    margin-top: 10%;
+    margin-left: 5%;
+    
+    max-width: 250px;
+    max-height: auto;
+    overflow-y: auto;
+}
+
+.preview2{
+    float: right;
+    background-color: #C8C6C7;
+    margin-top: 10%;
+
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 5%;
+}
+
+.previewimg{
+    border-style: double;
+    border-width: medium;
+    max-height: 200px;
+    max-width: 200px;
+}
+.preview2 video {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #999;
+}
+
+.header1 {
+    background-image: linear-gradient(#93278F,#00a99d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 30px;
+}
+
+.dropdownbtn{
+    margin-left: 5%;
+}
